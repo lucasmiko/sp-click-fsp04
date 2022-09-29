@@ -7,6 +7,9 @@ body {
   padding: 0;
   font-family: "Lato";
 }
+body .show-desktop, body .show-tablet {
+  display: none;
+}
 body ul {
   margin: 0;
   padding: 0;
@@ -92,6 +95,27 @@ body .menu-links ul li a {
 }
 body .menu-links.menu-open {
   right: 0;
+}
+
+@media (min-width: 768px) {
+  body .show-tablet {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  body .show-desktop {
+    display: block;
+  }
+  body .show-mobile {
+    display: none;
+  }
+  body header .header-content .nav-desktop ul {
+    display: flex;
+  }
+  body header .header-content .nav-desktop ul li {
+    min-width: 100px;
+    margin-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

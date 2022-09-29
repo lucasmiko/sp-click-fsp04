@@ -6,6 +6,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Lato";
+    .show-desktop, .show-tablet {
+        display: none;
+    }
     ul {
         margin: 0;
         padding: 0;
@@ -90,6 +93,38 @@ body {
         }
         &.menu-open {
             right: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        .show-tablet {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        .show-desktop {
+            display: block;
+        }
+        .show-mobile {
+            display: none;
+        }
+        header {
+            .header-content {
+                .nav-desktop {
+                    ul {
+                        display: flex;
+                        li {
+                            min-width: 100px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

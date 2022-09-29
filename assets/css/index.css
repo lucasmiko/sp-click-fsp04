@@ -19,6 +19,9 @@ body {
   padding: 0;
   font-family: "Lato";
 }
+body .show-desktop, body .show-tablet {
+  display: none;
+}
 body ul {
   margin: 0;
   padding: 0;
@@ -106,6 +109,26 @@ body .menu-links.menu-open {
   right: 0;
 }
 
+@media (min-width: 768px) {
+  body .show-tablet {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  body .show-desktop {
+    display: block;
+  }
+  body .show-mobile {
+    display: none;
+  }
+  body header .header-content .nav-desktop ul {
+    display: flex;
+  }
+  body header .header-content .nav-desktop ul li {
+    min-width: 100px;
+    margin-left: 20px;
+  }
+}
 section#hero {
   height: 100vh;
   background-image: url("/assets/images/beco-do-batman.png");
@@ -140,6 +163,114 @@ section#hero .destak .title {
   }
   body section#hero .destak .title h2 {
     font-size: 1.2em;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #131c21;
+  color: #FFF;
+}
+main .popular-places {
+  margin: 0 auto;
+  max-width: 300px;
+}
+main .popular-places .section-title {
+  text-align: center;
+  margin: 50px 0;
+}
+main .popular-places .section-title h2 {
+  font-size: 1.5em;
+}
+main .popular-places .section-title h3 {
+  font-weight: lighter;
+  font-size: 1em;
+}
+main .popular-places .places {
+  margin: 50px 0;
+}
+main .popular-places .places .individual-place {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  margin-top: 60px;
+}
+main .popular-places .places .individual-place .description {
+  height: 160px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(16, 25, 30, 0.8588235294);
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .popular-places .places .individual-place .description .name {
+  display: flex;
+}
+main .popular-places .places .individual-place .description .name h3 {
+  padding-left: 10px;
+  margin: 0;
+}
+main .popular-places .places .individual-place .description p {
+  margin: 0;
+}
+main .popular-places .places .individual-place:nth-child(1) {
+  background: url("/assets/images/teatro-municipal.png");
+}
+main .popular-places .places .individual-place:nth-child(2) {
+  background: url("/assets/images/arena.png");
+}
+main .popular-places .places .individual-place:nth-child(3) {
+  background: url("/assets/images/jardim-botanico.png");
+}
+main .popular-places .places .individual-place:nth-child(4) {
+  background: url("/assets/images/restaurantes.png");
+}
+
+@media (min-width: 768px) {
+  main .popular-places {
+    max-width: 700px;
+    width: 100%;
+  }
+  main .popular-places .section-title h2 {
+    font-size: 2.5em;
+  }
+  main .popular-places .section-title h3 {
+    font-size: 1.5em;
+  }
+  main .popular-places .places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .popular-places .places .individual-place {
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  main .popular-places {
+    max-width: 1100px;
+  }
+  main .popular-places .places {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  main .popular-places .places .individual-place {
+    width: 400px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .popular-places {
+    max-width: 1300px;
+  }
+  .popular-places .section-title h2 {
+    font-size: 2.5em;
+  }
+  .popular-places .section-title h3 {
+    font-size: 2em;
   }
 }
 

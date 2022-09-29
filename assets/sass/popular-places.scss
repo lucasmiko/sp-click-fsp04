@@ -1,0 +1,119 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #131c21;
+    color: #FFF;
+    .popular-places {
+        margin: 0 auto;
+        max-width: 300px;
+        .section-title {
+            text-align: center;
+            margin: 50px 0;
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-weight: lighter;
+                font-size: 1em;
+            }
+        }
+        .places {
+            margin: 50px 0;
+            .individual-place {
+                width: 100%;
+                height: 350px;
+                position: relative;
+                margin-top: 60px;
+                .description {
+                    height: 160px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: #10191edb;
+                    padding: 0 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .name {
+                        display: flex;
+                        h3 {
+                            padding-left: 10px;
+                            margin: 0;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+                &:nth-child(1) {
+                    background: url('/assets/images/teatro-municipal.png');
+                }
+                &:nth-child(2) {
+                    background: url('/assets/images/arena.png');
+                }
+                &:nth-child(3) {
+                    background: url('/assets/images/jardim-botanico.png');
+                }
+                &:nth-child(4) {
+                    background: url('/assets/images/restaurantes.png');
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .popular-places {
+            max-width: 700px;
+            width: 100%;
+            .section-title {
+                h2 {
+                    font-size: 2.5em;
+                }
+                h3 {
+                    font-size: 1.5em;
+                }
+            }
+            .places {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .individual-place {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+
+        .popular-places {
+            max-width: 1100px;
+            .places {
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                .individual-place {
+                    width: 400px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .popular-places {
+        max-width: 1300px;
+        .section-title {
+            h2 {
+                font-size: 2.5em;
+            }
+            h3 {
+                font-size: 2em;
+            }
+        }
+    }
+}

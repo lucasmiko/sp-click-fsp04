@@ -12,13 +12,27 @@
         <div class="header-content">
             <img src="assets/images/sp-click-logo.png" alt="Logo do SP Click">
 
-            <div class="search">
+            <div class="search show-tablet">
                 <img src="assets/icons/search-icon.svg" alt="Pesquisar">
                 <input type="text" placeholder="Pesquisar...">
             </div>
-            <svg width="48" height="35" viewBox="0 0 48 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <a href="#" class="link-menu">
+            <svg class="show-mobile" width="48" height="35" viewBox="0 0 48 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 29V26H42V29H6ZM6 18.5V15.5H42V18.5H6ZM6 8V5H42V8H6Z" fill="white"/>
                 </svg>
+            </a>
+
+                <nav class="nav-desktop show-desktop">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">O Projeto</a></li>
+                        <li><a href="#">Lugares Populares</a></li>
+                        <li><a href="#">Teatros</a></li>
+                        <li><a href="#">Turismo</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
 
         </div>
 
@@ -53,6 +67,61 @@
         </div>
 
     </section>
+
+    <main>
+        <section class="popular-places">
+            <div class="section-title">
+                <h2>Lugares Populares</h2>
+                <h3>Museus, galerias, pontos turísticos, esportes, restaurantes, entre outros.</h3>
+            </div>
+
+            <div class="places">
+                <div class="individual-place">
+                    <div class="description">
+                        <div class="name">
+                            <img src="assets/icons/pin-icon.svg" alt="Ícone de pin">
+                            <h3>Theatro Municipal</h3>
+                        </div>
+
+                        <p>Projeto pelo arquiteto Ramos de Azevedo no estilo arquitetônico eclético, inspirado na Ópera de Paris e inaugurado em 1911.</p>
+                    </div>
+                </div>
+
+                <div class="individual-place">
+                    <div class="description">
+                        <div class="name">
+                            <img src="assets/icons/pin-icon.svg" alt="Ícone de pin">
+                            <h3>Neo Química Arena</h3>
+                        </div>
+
+                        <p>Estádio de futebol localizado no bairro de Itaquera, palco do jogo de abertura da Copa do Mundo de 2014.</p>
+                    </div>
+                </div>
+
+                <div class="individual-place">
+                    <div class="description">
+                        <div class="name">
+                            <img src="assets/icons/pin-icon.svg" alt="Ícone de pin">
+                            <h3>Jardim Botânico</h3>
+                        </div>
+
+                        <p>Fundado em 1928, o local tem o objetivo de mostrar o quanto a natureza é importante, e enfatizar cada vez mais o cuidado que se deve ter com a biodiversidade.</p>
+                    </div>
+                </div>
+
+                <div class="individual-place">
+                    <div class="description">
+                        <div class="name">
+                            <img src="assets/icons/pin-icon.svg" alt="Ícone de pin">
+                            <h3>Figueira Rubaiyat</h3>
+                        </div>
+
+                        <p>Restaurante icônico que foi construído em volta de uma árvore centenária e tombada pelo pratimônio cultural da cidade, que dá nome ao local.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
