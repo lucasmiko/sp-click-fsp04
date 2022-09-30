@@ -1,0 +1,103 @@
+main {
+    .perfect-vacations {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        .vacation-images {
+            display: flex;
+            justify-content: space-around;
+            div {
+                img {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                &:nth-child(1) {
+                    width: 214px;
+                }
+                &:nth-child(2) {
+                    width: 160px;
+                }
+            }
+        }
+        .vacation-text {
+            h2 {
+                font-size: 1.6em;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .perfect-vacations {
+            padding: 50px 10px;
+            flex-direction: row;
+            .vacation-images {
+                div {
+                    &:nth-child(2) {
+                        margin-left: 15px;
+                    }
+                }
+            }
+            .vacation-text {
+                padding: 0 0 0 20px;
+                h2 {
+                    font-size: 2.1em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        .perfect-vacations {
+            justify-content: center;
+            .vacation-images {
+                div {
+                    &:nth-child(1) {
+                        width: 339px;
+                    }
+                    &:nth-child(2) {
+                        width: 253px;
+                    }
+                }
+            }
+            .vacation-text {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        .perfect-vacations {
+            .vacation-text {
+                h2 {
+                    max-width: 550px;
+                }
+                p {
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        .perfect-vacations {
+            .vacation-text {
+                h2 {
+                    max-width: 700px;
+                }
+                p {
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+

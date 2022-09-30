@@ -1,0 +1,15 @@
+main .testimonials {
+  padding: 50px 0;
+}
+main .testimonials .testimonial-item {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+main .testimonials .testimonial-item img {
+  width: 300px;
+  height: 172px;
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=testimonials.css.map */

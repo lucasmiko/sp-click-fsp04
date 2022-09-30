@@ -1,0 +1,66 @@
+main .why-choose-us {
+  background-color: #10191e;
+  text-align: center;
+  padding: 50px 0;
+}
+main .why-choose-us h2 {
+  font-size: 1.6em;
+  margin: 0;
+}
+main .why-choose-us .reasons {
+  display: flex;
+  flex-direction: column;
+}
+main .why-choose-us .reasons .reason-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+main .why-choose-us .reasons .reason-item .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #252a2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .why-choose-us .reasons .reason-item.active {
+  border-bottom: 1px solid #8d9035;
+}
+main .why-choose-us .reasons .reason-item.active .icon {
+  background-color: #8d9035;
+}
+main .why-choose-us .reasons .reason-item.active h3 {
+  color: #8d9035;
+}
+main .why-choose-us .reasons .reason-item .reason-title h3 {
+  margin: 20px 0;
+}
+main .why-choose-us .reasons .reason-item .reason-title p {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  main .why-choose-us h2 {
+    font-size: 2.5em;
+  }
+  main .why-choose-us .reasons {
+    flex-direction: row;
+  }
+  main .why-choose-us .reasons .reason-item {
+    width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  main .why-choose-us .reasons {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main .why-choose-us .reasons .reason-item {
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=why-choose-us.css.map */

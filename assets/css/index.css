@@ -19,8 +19,9 @@ body {
   padding: 0;
   font-family: "Lato";
 }
-body .show-desktop, body .show-tablet {
-  display: none;
+body a {
+  text-decoration: none;
+  color: #FFF;
 }
 body ul {
   margin: 0;
@@ -29,9 +30,50 @@ body ul {
 body ul li {
   list-style: none;
 }
-body ul li a {
-  text-decoration: none;
+body h1, body h2, body h3, body h4, body h5, body h6, body p {
+  margin: 0;
+}
+body .custom-hr {
+  width: 180px;
+  height: 2px;
+  margin: 0;
+  margin-top: 10px;
+  border-color: #bfbc37;
+  background-color: #bfbc37;
+}
+body .section-max-width {
+  max-width: 300px;
+  margin: 0 auto;
+}
+body .section-subtitle {
+  font-size: 1.5em;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  background-color: #131c21;
   color: #FFF;
+}
+
+@media (min-width: 768px) {
+  body .section-max-width {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  body .section-max-width {
+    max-width: 1100px;
+  }
+}
+@media (min-width: 1400px) {
+  body .section-max-width {
+    max-width: 1300px;
+  }
+}
+body .show-desktop, body .show-tablet {
+  display: none;
+}
+body a {
   cursor: pointer;
 }
 body header {
@@ -171,10 +213,6 @@ main {
   background-color: #131c21;
   color: #FFF;
 }
-main .popular-places {
-  margin: 0 auto;
-  max-width: 300px;
-}
 main .popular-places .section-title {
   text-align: center;
   margin: 50px 0;
@@ -211,10 +249,6 @@ main .popular-places .places .individual-place .description .name {
 }
 main .popular-places .places .individual-place .description .name h3 {
   padding-left: 10px;
-  margin: 0;
-}
-main .popular-places .places .individual-place .description p {
-  margin: 0;
 }
 main .popular-places .places .individual-place:nth-child(1) {
   background: url("/assets/images/teatro-municipal.png");
@@ -231,7 +265,6 @@ main .popular-places .places .individual-place:nth-child(4) {
 
 @media (min-width: 768px) {
   main .popular-places {
-    max-width: 700px;
     width: 100%;
   }
   main .popular-places .section-title h2 {
@@ -250,9 +283,6 @@ main .popular-places .places .individual-place:nth-child(4) {
   }
 }
 @media (min-width: 1200px) {
-  main .popular-places {
-    max-width: 1100px;
-  }
   main .popular-places .places {
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -263,15 +293,214 @@ main .popular-places .places .individual-place:nth-child(4) {
   }
 }
 @media (min-width: 1400px) {
-  .popular-places {
-    max-width: 1300px;
-  }
   .popular-places .section-title h2 {
     font-size: 2.5em;
   }
   .popular-places .section-title h3 {
     font-size: 2em;
   }
+}
+main .why-choose-us {
+  background-color: #10191e;
+  text-align: center;
+  padding: 50px 0;
+}
+main .why-choose-us h2 {
+  font-size: 1.6em;
+  margin: 0;
+}
+main .why-choose-us .reasons {
+  display: flex;
+  flex-direction: column;
+}
+main .why-choose-us .reasons .reason-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+main .why-choose-us .reasons .reason-item .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #252a2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .why-choose-us .reasons .reason-item.active {
+  border-bottom: 1px solid #8d9035;
+}
+main .why-choose-us .reasons .reason-item.active .icon {
+  background-color: #8d9035;
+}
+main .why-choose-us .reasons .reason-item.active h3 {
+  color: #8d9035;
+}
+main .why-choose-us .reasons .reason-item .reason-title h3 {
+  margin: 20px 0;
+}
+main .why-choose-us .reasons .reason-item .reason-title p {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  main .why-choose-us h2 {
+    font-size: 2.5em;
+  }
+  main .why-choose-us .reasons {
+    flex-direction: row;
+  }
+  main .why-choose-us .reasons .reason-item {
+    width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  main .why-choose-us .reasons {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main .why-choose-us .reasons .reason-item {
+    cursor: pointer;
+  }
+}
+main .perfect-vacations {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+main .perfect-vacations .vacation-images {
+  display: flex;
+  justify-content: space-around;
+}
+main .perfect-vacations .vacation-images div img {
+  width: 100%;
+  margin-top: 10px;
+}
+main .perfect-vacations .vacation-images div:nth-child(1) {
+  width: 214px;
+}
+main .perfect-vacations .vacation-images div:nth-child(2) {
+  width: 160px;
+}
+main .perfect-vacations .vacation-text h2 {
+  font-size: 1.6em;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  main .perfect-vacations {
+    padding: 50px 10px;
+    flex-direction: row;
+  }
+  main .perfect-vacations .vacation-images div:nth-child(2) {
+    margin-left: 15px;
+  }
+  main .perfect-vacations .vacation-text {
+    padding: 0 0 0 20px;
+  }
+  main .perfect-vacations .vacation-text h2 {
+    font-size: 2.1em;
+  }
+}
+@media (min-width: 992px) {
+  main .perfect-vacations {
+    justify-content: center;
+  }
+  main .perfect-vacations .vacation-images div:nth-child(1) {
+    width: 339px;
+  }
+  main .perfect-vacations .vacation-images div:nth-child(2) {
+    width: 253px;
+  }
+  main .perfect-vacations .vacation-text {
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  main .perfect-vacations .vacation-text h2 {
+    max-width: 550px;
+  }
+  main .perfect-vacations .vacation-text p {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  main .perfect-vacations .vacation-text h2 {
+    max-width: 700px;
+  }
+  main .perfect-vacations .vacation-text p {
+    max-width: 600px;
+  }
+}
+main .explore-nature {
+  padding: 50px 0;
+  background-color: #10191e;
+}
+main .explore-nature .nature-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .explore-nature .nature-title:nth-child(2) {
+  margin-left: -110px;
+}
+main .explore-nature .nature-image {
+  width: 100%;
+  height: 878px;
+  background: url("/assets/images/parque-ibirapuera.png") no-repeat;
+  background-position: -600px;
+  margin-top: 50px;
+}
+main .explore-nature .nature-image .image-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 140px 40px;
+}
+main .explore-nature .nature-image .image-texts .nature-destak {
+  max-width: 250px;
+  min-height: 100px;
+  background-color: rgba(204, 204, 204, 0.3137254902);
+  border-radius: 5px;
+  padding: 15px;
+}
+main .explore-nature .nature-image .image-texts .nature-destak:nth-child(2) {
+  align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  main .explore-nature .nature-image {
+    background-position: unset;
+  }
+}
+@media (min-width: 992px) {
+  main .explore-nature .image-texts .nature-destak {
+    padding: 20px;
+  }
+  main .explore-nature .image-texts .nature-destak p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  main .explore-nature .image-texts {
+    max-width: 900px;
+  }
+}
+main .testimonials {
+  padding: 50px 0;
+}
+main .testimonials .testimonial-item {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+main .testimonials .testimonial-item img {
+  width: 300px;
+  height: 172px;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

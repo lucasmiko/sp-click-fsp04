@@ -4,10 +4,6 @@ main {
   background-color: #131c21;
   color: #FFF;
 }
-main .popular-places {
-  margin: 0 auto;
-  max-width: 300px;
-}
 main .popular-places .section-title {
   text-align: center;
   margin: 50px 0;
@@ -44,10 +40,6 @@ main .popular-places .places .individual-place .description .name {
 }
 main .popular-places .places .individual-place .description .name h3 {
   padding-left: 10px;
-  margin: 0;
-}
-main .popular-places .places .individual-place .description p {
-  margin: 0;
 }
 main .popular-places .places .individual-place:nth-child(1) {
   background: url("/assets/images/teatro-municipal.png");
@@ -64,7 +56,6 @@ main .popular-places .places .individual-place:nth-child(4) {
 
 @media (min-width: 768px) {
   main .popular-places {
-    max-width: 700px;
     width: 100%;
   }
   main .popular-places .section-title h2 {
@@ -83,9 +74,6 @@ main .popular-places .places .individual-place:nth-child(4) {
   }
 }
 @media (min-width: 1200px) {
-  main .popular-places {
-    max-width: 1100px;
-  }
   main .popular-places .places {
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -96,9 +84,6 @@ main .popular-places .places .individual-place:nth-child(4) {
   }
 }
 @media (min-width: 1400px) {
-  .popular-places {
-    max-width: 1300px;
-  }
   .popular-places .section-title h2 {
     font-size: 2.5em;
   }
