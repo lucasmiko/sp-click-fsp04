@@ -11,5 +11,39 @@ main .testimonials .testimonial-item img {
   height: 172px;
   margin-top: 30px;
 }
+main .testimonials .testimonial-item.right {
+  text-align: right;
+}
+main .testimonials .testimonial-quote p {
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  main .testimonials .testimonial-item {
+    flex-direction: row;
+  }
+  main .testimonials .testimonial-item img {
+    width: 350px;
+    height: 201px;
+    margin-top: 0;
+    margin-left: 50px;
+  }
+  main .testimonials .testimonial-item p {
+    font-size: 1.3em;
+  }
+  main .testimonials .testimonial-item.right {
+    flex-direction: row-reverse;
+  }
+  main .testimonials .testimonial-item.right img {
+    margin-right: 50px;
+    margin-left: unset;
+  }
+}
+@media (min-width: 1200px) {
+  main .testimonials .testimonial-item img {
+    width: 500px;
+    height: 286px;
+  }
+}
 
 /*# sourceMappingURL=testimonials.css.map */

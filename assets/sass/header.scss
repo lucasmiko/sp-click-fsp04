@@ -1,7 +1,4 @@
 body {
-    .show-desktop, .show-tablet {
-        display: none;
-    }
     a {
         cursor: pointer;
     }
@@ -14,7 +11,7 @@ body {
         display: flex;
         align-items: center;
         border-bottom: 2px solid #CCC;
-        z-index: 1;
+        z-index: 3;
         img {
             width: 65px;
         }
@@ -81,22 +78,8 @@ body {
     }
 }
 
-@media (min-width: 768px) {
-    body {
-        .show-tablet {
-            display: block;
-        }
-    }
-}
-
 @media (min-width: 1200px) {
     body {
-        .show-desktop {
-            display: block;
-        }
-        .show-mobile {
-            display: none;
-        }
         header {
             .header-content {
                 .nav-desktop {

@@ -19,6 +19,9 @@ body {
   padding: 0;
   font-family: "Lato";
 }
+body .show-desktop, body .show-tablet {
+  display: none;
+}
 body a {
   text-decoration: none;
   color: #FFF;
@@ -59,19 +62,28 @@ body main {
   body .section-max-width {
     max-width: 700px;
   }
+  body .section-subtitle {
+    font-size: 2.5em;
+  }
+  body .show-tablet {
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
   body .section-max-width {
     max-width: 1100px;
+  }
+  body .show-desktop {
+    display: block;
+  }
+  body .show-mobile {
+    display: none;
   }
 }
 @media (min-width: 1400px) {
   body .section-max-width {
     max-width: 1300px;
   }
-}
-body .show-desktop, body .show-tablet {
-  display: none;
 }
 body a {
   cursor: pointer;
@@ -85,7 +97,7 @@ body header {
   display: flex;
   align-items: center;
   border-bottom: 2px solid #CCC;
-  z-index: 1;
+  z-index: 3;
 }
 body header img {
   width: 65px;
@@ -151,18 +163,7 @@ body .menu-links.menu-open {
   right: 0;
 }
 
-@media (min-width: 768px) {
-  body .show-tablet {
-    display: block;
-  }
-}
 @media (min-width: 1200px) {
-  body .show-desktop {
-    display: block;
-  }
-  body .show-mobile {
-    display: none;
-  }
   body header .header-content .nav-desktop ul {
     display: flex;
   }
@@ -198,13 +199,20 @@ section#hero .destak .title {
   margin-top: 150px;
   text-align: center;
 }
+section#hero .destak .title h1 {
+  font-size: 2.7em;
+  margin-bottom: 20px;
+}
+section#hero .destak .title h2 {
+  font-weight: lighter;
+}
 
 @media (min-width: 768px) {
   body section#hero .destak .title h1 {
     font-size: 5em;
   }
   body section#hero .destak .title h2 {
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
 }
 main {
@@ -219,6 +227,7 @@ main .popular-places .section-title {
 }
 main .popular-places .section-title h2 {
   font-size: 1.5em;
+  margin-bottom: 10px;
 }
 main .popular-places .section-title h3 {
   font-weight: lighter;
@@ -387,6 +396,9 @@ main .perfect-vacations .vacation-text h2 {
   font-size: 1.6em;
   margin-top: 50px;
 }
+main .perfect-vacations .vacation-text p {
+  padding-top: 20px;
+}
 
 @media (min-width: 768px) {
   main .perfect-vacations {
@@ -401,6 +413,7 @@ main .perfect-vacations .vacation-text h2 {
   }
   main .perfect-vacations .vacation-text h2 {
     font-size: 2.1em;
+    margin-top: unset;
   }
 }
 @media (min-width: 992px) {
@@ -501,6 +514,157 @@ main .testimonials .testimonial-item img {
   width: 300px;
   height: 172px;
   margin-top: 30px;
+}
+main .testimonials .testimonial-item.right {
+  text-align: right;
+}
+main .testimonials .testimonial-quote p {
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  main .testimonials .testimonial-item {
+    flex-direction: row;
+  }
+  main .testimonials .testimonial-item img {
+    width: 350px;
+    height: 201px;
+    margin-top: 0;
+    margin-left: 50px;
+  }
+  main .testimonials .testimonial-item p {
+    font-size: 1.3em;
+  }
+  main .testimonials .testimonial-item.right {
+    flex-direction: row-reverse;
+  }
+  main .testimonials .testimonial-item.right img {
+    margin-right: 50px;
+    margin-left: unset;
+  }
+}
+@media (min-width: 1200px) {
+  main .testimonials .testimonial-item img {
+    width: 500px;
+    height: 286px;
+  }
+}
+footer {
+  background: url("/assets/images/estrada.png") no-repeat;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+footer::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  color: #FFF;
+  background-image: linear-gradient(#161618, rgba(22, 22, 24, 0.5647058824));
+  z-index: 1;
+}
+footer .footer-info, footer .copyright {
+  z-index: 2;
+}
+footer .footer-info {
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-info .logo {
+  align-self: center;
+  margin-left: 10px;
+}
+footer .footer-info .links-and-contact {
+  margin-top: 100px;
+  width: 100%;
+}
+footer .footer-info .links-and-contact .footer-links li {
+  margin-top: 10px;
+}
+footer .footer-info .links-and-contact h3 {
+  font-size: 1.6em;
+}
+footer .footer-info .links-and-contact .contact {
+  margin-top: 40px;
+}
+footer .footer-info .links-and-contact .contact p {
+  padding-top: 10px;
+}
+footer .footer-info .social-media {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+footer .footer-info .social-media a img {
+  height: 50px;
+}
+footer .copyright {
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid #CCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    background: url("/assets/images/estrada-desktop.png") no-repeat;
+    background-position: right;
+    background-color: #10191e;
+    background-size: 100%;
+  }
+  footer .footer-info {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: unset;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-top: unset;
+  }
+  footer .footer-info .logo img {
+    width: 70%;
+  }
+  footer .footer-info .links-and-contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: unset;
+  }
+  footer .footer-info .links-and-contact .contact {
+    margin-top: unset;
+    margin-left: 50px;
+  }
+  footer .footer-info .links-and-contact .contact p {
+    padding-top: 10px;
+  }
+  footer .footer-info .social-media {
+    margin: unset;
+  }
+  footer .footer-info .social-media a img {
+    padding: 0 10px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info {
+    max-width: 1100px;
+  }
+  footer .footer-info .logo {
+    width: 30%;
+  }
+  footer .footer-info .links-and-contact .contact {
+    margin-left: unset;
+  }
+  footer .footer-info .social-media {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -10,6 +10,53 @@ main {
                 height: 172px;
                 margin-top: 30px;
             }
+            &.right {
+                text-align: right;
+            }
+        }
+        .testimonial-quote {
+            p {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .testimonials {
+            .testimonial-item {
+                flex-direction: row;
+                img {
+                    width: 350px;
+                    height: 201px;
+                    margin-top: 0;
+                    margin-left: 50px;
+                }
+                p {
+                    font-size: 1.3em;
+                }
+                &.right {
+                    flex-direction: row-reverse;
+                    img {
+                        margin-right: 50px;
+                        margin-left: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        .testimonials {
+            .testimonial-item {
+                img {
+                    width: 500px;
+                    height: 286px;
+                }
+            }
         }
     }
 }

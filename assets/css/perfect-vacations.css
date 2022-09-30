@@ -21,6 +21,9 @@ main .perfect-vacations .vacation-text h2 {
   font-size: 1.6em;
   margin-top: 50px;
 }
+main .perfect-vacations .vacation-text p {
+  padding-top: 20px;
+}
 
 @media (min-width: 768px) {
   main .perfect-vacations {
@@ -35,6 +38,7 @@ main .perfect-vacations .vacation-text h2 {
   }
   main .perfect-vacations .vacation-text h2 {
     font-size: 2.1em;
+    margin-top: unset;
   }
 }
 @media (min-width: 992px) {

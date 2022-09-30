@@ -25,13 +25,20 @@ section#hero .destak .title {
   margin-top: 150px;
   text-align: center;
 }
+section#hero .destak .title h1 {
+  font-size: 2.7em;
+  margin-bottom: 20px;
+}
+section#hero .destak .title h2 {
+  font-weight: lighter;
+}
 
 @media (min-width: 768px) {
   body section#hero .destak .title h1 {
     font-size: 5em;
   }
   body section#hero .destak .title h2 {
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
 }
 

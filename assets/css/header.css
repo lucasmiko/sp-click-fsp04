@@ -1,6 +1,3 @@
-body .show-desktop, body .show-tablet {
-  display: none;
-}
 body a {
   cursor: pointer;
 }
@@ -13,7 +10,7 @@ body header {
   display: flex;
   align-items: center;
   border-bottom: 2px solid #CCC;
-  z-index: 1;
+  z-index: 3;
 }
 body header img {
   width: 65px;
@@ -79,18 +76,7 @@ body .menu-links.menu-open {
   right: 0;
 }
 
-@media (min-width: 768px) {
-  body .show-tablet {
-    display: block;
-  }
-}
 @media (min-width: 1200px) {
-  body .show-desktop {
-    display: block;
-  }
-  body .show-mobile {
-    display: none;
-  }
   body header .header-content .nav-desktop ul {
     display: flex;
   }
