@@ -1,5 +1,5 @@
 footer {
-  background: url("/assets/images/estrada.png") no-repeat;
+  background: url("/assets/images/estrada.webp") no-repeat;
   color: #FFF;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ footer .copyright {
 
 @media (min-width: 768px) {
   footer {
-    background: url("/assets/images/estrada-desktop.png") no-repeat;
+    background: url("/assets/images/estrada-desktop.webp") no-repeat;
     background-position: right;
     background-color: #10191e;
     background-size: 100%;

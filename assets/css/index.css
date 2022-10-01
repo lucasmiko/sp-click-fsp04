@@ -25,6 +25,7 @@ body .show-desktop, body .show-tablet {
 body a {
   text-decoration: none;
   color: #FFF;
+  cursor: pointer;
 }
 body ul {
   margin: 0;
@@ -84,9 +85,6 @@ body main {
   body .section-max-width {
     max-width: 1300px;
   }
-}
-body a {
-  cursor: pointer;
 }
 body header {
   height: 100px;
@@ -174,7 +172,7 @@ body .menu-links.menu-open {
 }
 section#hero {
   height: 100vh;
-  background-image: url("/assets/images/beco-do-batman.png");
+  background-image: url("/assets/images/beco-do-batman.webp");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -260,13 +258,13 @@ main .popular-places .places .individual-place .description .name h3 {
   padding-left: 10px;
 }
 main .popular-places .places .individual-place:nth-child(1) {
-  background: url("/assets/images/teatro-municipal.png");
+  background: url("/assets/images/teatro-municipal.webp");
 }
 main .popular-places .places .individual-place:nth-child(2) {
-  background: url("/assets/images/arena.png");
+  background: url("/assets/images/arena.webp");
 }
 main .popular-places .places .individual-place:nth-child(3) {
-  background: url("/assets/images/jardim-botanico.png");
+  background: url("/assets/images/jardim-botanico.webp");
 }
 main .popular-places .places .individual-place:nth-child(4) {
   background: url("/assets/images/restaurantes.png");
@@ -462,7 +460,7 @@ main .explore-nature .nature-title:nth-child(2) {
 main .explore-nature .nature-image {
   width: 100%;
   height: 878px;
-  background: url("/assets/images/parque-ibirapuera.png") no-repeat;
+  background: url("/assets/images/parque-ibirapuera.webp") no-repeat;
   background-position: -600px;
   margin-top: 50px;
 }
@@ -550,7 +548,7 @@ main .testimonials .testimonial-quote p {
   }
 }
 footer {
-  background: url("/assets/images/estrada.png") no-repeat;
+  background: url("/assets/images/estrada.webp") no-repeat;
   color: #FFF;
   display: flex;
   flex-direction: column;
@@ -615,7 +613,7 @@ footer .copyright {
 
 @media (min-width: 768px) {
   footer {
-    background: url("/assets/images/estrada-desktop.png") no-repeat;
+    background: url("/assets/images/estrada-desktop.webp") no-repeat;
     background-position: right;
     background-color: #10191e;
     background-size: 100%;

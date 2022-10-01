@@ -13,6 +13,7 @@ body .show-desktop, body .show-tablet {
 body a {
   text-decoration: none;
   color: #FFF;
+  cursor: pointer;
 }
 body ul {
   margin: 0;
