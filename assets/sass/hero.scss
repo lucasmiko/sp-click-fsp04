@@ -31,6 +31,39 @@ section#hero {
             }
         }
     }
+    .links {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        align-items: center;
+        background-color: #131c2180;
+        overflow: auto;
+        padding: 0 25px;
+        .link-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: #FFF;
+            min-width: 200px;
+            cursor: pointer;
+            &.active {
+                border-bottom: 2px solid #bfbc37;
+                svg {
+                    path {
+                        fill: #bfbc37;
+                    }
+                }
+            }
+            h3 {
+                font-size: 1em;
+            }
+            h4 {
+                font-size: 0.8em;
+            }
+        }
+    }
 }
 
 
@@ -47,6 +80,16 @@ section#hero {
                         font-size: 1.6em;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    section#hero {
+        .destak {
+            .links {
+                justify-content: space-around;
             }
         }
     }

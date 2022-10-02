@@ -7,8 +7,8 @@ main .testimonials .testimonial-item {
   flex-direction: column;
 }
 main .testimonials .testimonial-item img {
-  width: 300px;
-  height: 172px;
+  max-width: 300px;
+  max-height: 172px;
   margin-top: 30px;
 }
 main .testimonials .testimonial-item.right {
@@ -23,8 +23,8 @@ main .testimonials .testimonial-quote p {
     flex-direction: row;
   }
   main .testimonials .testimonial-item img {
-    width: 350px;
-    height: 201px;
+    max-width: 350px;
+    max-height: 201px;
     margin-top: 0;
     margin-left: 50px;
   }
@@ -41,8 +41,8 @@ main .testimonials .testimonial-quote p {
 }
 @media (min-width: 1200px) {
   main .testimonials .testimonial-item img {
-    width: 500px;
-    height: 286px;
+    max-width: 500px;
+    max-height: 286px;
   }
 }
 

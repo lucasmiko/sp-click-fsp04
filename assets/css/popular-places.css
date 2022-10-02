@@ -52,7 +52,7 @@ main .popular-places .places .individual-place:nth-child(3) {
   background: url("/assets/images/jardim-botanico.webp");
 }
 main .popular-places .places .individual-place:nth-child(4) {
-  background: url("/assets/images/restaurantes.png");
+  background: url("/assets/images/restaurantes.webp");
 }
 
 @media (min-width: 768px) {
